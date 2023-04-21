@@ -50,7 +50,7 @@ variable "lxc_cpu" {
 
 variable "lxc_memory" {
   description = "lxc memory limitis"
-  type        = number
+  type        = string
 }
 
 
