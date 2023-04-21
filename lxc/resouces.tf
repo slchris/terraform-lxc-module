@@ -27,7 +27,6 @@ provider "lxd" {
 resource "lxd_container" "container" {
   name = var.lxc_name
   image = var.lxc_image
-  profiles = var.lxc_profiles
   ephemeral = var.lxc_ephemeral
   type = var.lxc_type
 
