@@ -8,7 +8,7 @@ variable "lxc_addresses" {
 
 
 variable "lxc_password" {
-  description = "host ip of the lxc server"
+  description = "password of the lxc server"
   type        = string
 }
 
@@ -24,10 +24,6 @@ variable "lxc_image" {
   type        = string
 }
 
-variable "lxc_profiles" {
-  description = "lxc profiles name"
-  type        = string
-}
 
 
 variable "lxc_ephemeral" {
