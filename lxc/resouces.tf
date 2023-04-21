@@ -29,10 +29,10 @@ resource "lxd_container" "container" {
   image = var.lxc_image
   ephemeral = var.lxc_ephemeral
   type = var.lxc_type
+  security.privileged = var.lxc_privileged
 
   config = {
     "boot.autostart" = var.lxc_autostart
-    "security.privileged" = var.lxc_privileged
   }
 
 
