@@ -1,0 +1,5 @@
+*.lock.info
+*.tfstate
+*.lock.hcl
+*.terraform
+.terragrunt-cache
