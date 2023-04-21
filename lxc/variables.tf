@@ -47,7 +47,7 @@ variable "lxc_autostart" {
 
 variable "lxc_privileged" {
   description = "privileged option"
-  type        = bool
+  type        = number
 }
 
 

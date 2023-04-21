@@ -33,6 +33,7 @@ resource "lxd_container" "container" {
 
   config = {
     "boot.autostart" = var.lxc_autostart
+    "security.privileged" = var.lxc_privileged
   }
 
 
