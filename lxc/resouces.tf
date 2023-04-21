@@ -19,7 +19,6 @@ provider "lxd" {
     address  = var.lxc_addresses
     password = var.lxc_password
     default  = true
-    privileged = var.lxc_privileged
   }
 
 }
@@ -30,6 +29,7 @@ resource "lxd_container" "container" {
   image = var.lxc_image
   ephemeral = var.lxc_ephemeral
   type = var.lxc_type
+  privileged = var.lxc_privileged
 
   config = {
     "boot.autostart" = var.lxc_autostart
