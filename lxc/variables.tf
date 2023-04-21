@@ -43,7 +43,7 @@ variable "lxc_type" {
 
 variable "lxc_autostart" {
   description = "lxc autostart name"
-  type        = string
+  type        = bool
 }
 
 
