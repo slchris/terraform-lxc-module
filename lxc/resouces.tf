@@ -19,6 +19,7 @@ provider "lxd" {
     address  = var.lxc_addresses
     password = var.lxc_password
     default  = true
+    privileged = var.lxc_privileged
   }
 
 }

@@ -43,6 +43,14 @@ variable "lxc_autostart" {
 }
 
 
+
+
+variable "lxc_privileged" {
+  description = "privileged option"
+  type        = bool
+}
+
+
 variable "lxc_cpu" {
   description = "lxc cpu limitis"
   type        = number
