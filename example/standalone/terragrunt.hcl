@@ -6,6 +6,7 @@ terraform {
 
 inputs = {
   lxc_addresses = "192.168.100.2"
+  lxc_port = "8443"
   
   lxc_name = "demo"
   lxc_image = "images:ubuntu/jammy/cloud"

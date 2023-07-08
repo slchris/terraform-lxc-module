@@ -6,6 +6,13 @@ variable "lxc_addresses" {
   type        = string
 }
 
+variable "lxc_port" {
+  default     = "8443"
+  description = "port of the lxc server"
+  type        = string
+}
+
+
 
 variable "lxc_password" {
   description = "password of the lxc server"
